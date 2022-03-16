@@ -73,3 +73,4 @@ end
 gem 'sass-rails'
 gem 'activeadmin'
 gem 'devise'
+gem "bulma-rails"
