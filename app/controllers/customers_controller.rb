@@ -7,4 +7,10 @@ class CustomersController < ApplicationController
   def show
     @foundcust = Customer.all
   end
+  def noemail
+    @foundcust = Customer.all.where("EmailAddress = ''")
+  end
+  def alphabetized
+    @foundcust = Customer.all.order('FullName')
+  end
 end
